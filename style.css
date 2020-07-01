@@ -1,0 +1,155 @@
+.header{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    display: inline;
+    margin-left: 10vw;
+    color: white;
+}
+
+.newBtn{
+    float: right;
+    color: black;
+    font-size: 1.5rem;
+    background-color: cyan;
+    justify-content: flex-end;
+    margin-right: 15vw;
+    margin-left: auto;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+
+}
+
+body{
+    background: linear-gradient(to right, rgb(65, 86, 129), rgb(53, 126, 114));
+}
+
+.library{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+    position: relative;
+    z-index: 0;
+}
+
+.card{
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: darkcyan;
+    border: solid black 2px;
+    position: relative;
+}
+
+.form-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.form{
+    position: relative;
+    pointer-events: auto;
+
+    max-width: 500px;
+    max-height: 720px;
+    display: block;
+    margin: 15vh auto;
+    background-color: darkcyan;
+    border: 2px black solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.close-form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close{
+    display: inline;
+    position: fixed;
+    text-align; right;
+    background-color: red;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+label{
+    display: inline-flex;
+}
+
+input{
+    display: block;
+    height: 1rem;
+    width: 10rem;
+}
+
+.form-input{
+    font-size: 1rem;
+    display: block;
+}
+
+.form-buttons{
+    display: flex;
+    margin: 20px;
+}
+
+#has-read{
+    height: 15px;
+    width: 15px;
+    margin-right: auto;
+    display: inline;
+    align-self: center;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.book-title{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.book-author{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.book-pages{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.book-read-label{
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.book-read{
+    color: white;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.deleteBtn{
+    display: block;
+    position: absolute;
+    right:20px;
+    top: 5px;
+    border-radius: 50px;
+    background-color: red;
+}
